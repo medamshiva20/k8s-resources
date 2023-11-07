@@ -24,7 +24,7 @@ spec:
   app: frontend
  ports:
   - name: name-of-service-port
-    protocol: TCp
+    protocol: TCP
     port: 80
     targetPort: http-web-svc
     nodePort: 30002
