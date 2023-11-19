@@ -9,5 +9,5 @@ spec:
  awsElasticBalckStore:
   fsType: ext4
   volumeID: vol-0a129935e3209d4e4
-capacity:
- storage: 10Gi
+ capacity:
+  storage: 10Gi
