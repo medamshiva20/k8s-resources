@@ -11,3 +11,15 @@ spec:
     volumeID: vol-0a129935e3209d4e4
   capacity:
     storage: 10Gi
+---
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+ name: ebs-static-pvc
+spec:
+ storageClassName: ""
+ accessModes:
+  - ReadWriteOnce
+ resources:
+  requests:
+   storage: 3Gi
