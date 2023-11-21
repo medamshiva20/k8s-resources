@@ -10,6 +10,7 @@ parameters:
   gidRangeStart: "1000" # optional
   gidRangeEnd: "2000" # optional
   basePath: "/roboshop" # optional
+reclaimPolicy: Retain
   # ensureUniqueDirectory: "true" # optional
   # reuseAccessPoint: "false" # optional
 ---
