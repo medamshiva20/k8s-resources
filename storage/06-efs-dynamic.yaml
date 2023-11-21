@@ -42,7 +42,7 @@ spec:
   metadata:
    labels:
     app: nginx
-    project: nginx
+    project: roboshop
     component: frontend
   spec:
    containers:
