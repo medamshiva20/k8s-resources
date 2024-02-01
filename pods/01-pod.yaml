@@ -3,7 +3,7 @@ apiVersion: v1
 kind: Pod
 metadata:
  name: simple-pod
- namepsace: roboshop
+ namespace: roboshop
 spec:
  containers:
   - name: nginx-simple
