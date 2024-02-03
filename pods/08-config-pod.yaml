@@ -19,5 +19,6 @@ spec:
          key: TRAINER
      - name: DURATION
        valueFrom:
-        name: course-config
-        key: DURATION
+        configMapKeyRef:
+         name: course-config
+         key: DURATION
