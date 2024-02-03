@@ -9,7 +9,7 @@ spec:
     env:
      - name: COURSE
        valueFrom:
-        confipMapKeyRef:
+        configMapKeyRef:
          name: course-config
          key: COURSE
      - name: PERSON
