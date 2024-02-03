@@ -3,7 +3,7 @@ kind: Pod
 metadata:
  name: nginx
  labels:
-  environment: dev
+  environment: Dev
   app: frontend
 spec:
  containers:
@@ -18,11 +18,12 @@ kind: Service
 metadata:
  name: nginx-service
 spec:
+ type: ClusterIP
  selector:
-  environment: dev
+  environment: Dev
   app: frontend
  ports:
   - name: name-of-service-port
     protocol: TCP
     port: 80 # This port belongs to service
-    targetPort: http-web-svc # This belongs to container
+    targetPort: http-web-svc # This port belongs to container port
