@@ -2,11 +2,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
- name: envar-demo
+ name: envvar-demo
 spec:
  containers:
   - name: nginx
-    image: nginx
+    image: nginx 
     env:
      - name: DEMO_GREETING
        value: "Hello from the environment"
