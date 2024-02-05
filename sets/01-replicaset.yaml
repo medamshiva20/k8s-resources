@@ -2,17 +2,17 @@ apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
  name: reverse-proxy
- labels:
+ labels: # these labels are replica set labels, every k8 resource can have labels.
   app: guestbook
   tier: frontend
 spec:
  replicas: 3
  selector:
-  matchLabels:
+  matchLabels: #these labels should match with pod labels
    tier: frontend
    app: nginx
    environment: dev
- template:
+ template: #this one is nothing but pod definition.
   metadata:
    labels:
     tier: frontend
