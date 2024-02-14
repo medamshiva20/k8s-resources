@@ -30,5 +30,5 @@ spec:
          mountPath: /var/log
    volumes:
     - name: var-log
-      hostPath: /var/log #gives access to /var/log from the pod
+      hostPath: #gives access to /var/log from the pod
        path: /var/log
