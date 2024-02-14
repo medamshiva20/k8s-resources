@@ -5,7 +5,7 @@ metadata:
 spec:
  storageClassName: ""
  accessModes:
-  - ReadWriteMany
+  - ReadWriteOnce
  awsElasticBlockStore:
   fsType: ext4
   volumeID: vol-07552ca3d94f8464a
@@ -19,7 +19,7 @@ metadata:
 spec:
  storageClassName: ""
  accessModes:
-  - ReadWriteMany
+  - ReadWriteOnce
  resources:
   requests:
    storage: 3Gi
