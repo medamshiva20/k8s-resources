@@ -13,8 +13,9 @@ spec:
    version: v1
  template:
   metadata:
-   k8s-app: fluentd-logging
-   version: v1
+   labels:
+    k8s-app: fluentd-logging
+    version: v1
   spec:
    containers:
     - name: fluentd
