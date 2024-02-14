@@ -28,16 +28,16 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
  name: nginx-deployment
- labels:
+ labels: # these labels belong to deployment
   app: nginx
 spec:
- replicas: 10
+ replicas: 1
  selector:
-  matchLabels:
+  matchLabels: # these labels should match with pod
    environemnt: Dev
    app: nginx
    project: roboshop
- template:
+ template: # this is the pod definition
   metadata:
    labels:
     environemnt: Dev
@@ -54,5 +54,5 @@ spec:
          mountPath: /usr/share/nginx/html
    volumes:
     - name: nginx-html
-      persistentVolumeClaim:
+      persistentVolumeClaim: # this is the PVC
        claimName: ebs-static-pvc
