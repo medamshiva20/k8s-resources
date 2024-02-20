@@ -12,7 +12,7 @@ spec:
  persistentVolumeReclaimPolicy: Retain
  csi:
   driver: efs.csi.aws.com
-  volumeHandle: fs-03827967774d86fc6
+  volumeHandle: fs-0dcc66f571fb24d09
 ---
 apiVersion: v1
 kind: PersistentVolumeClaim
@@ -33,7 +33,7 @@ metadata:
  labels:
   app: nginx
 spec:
- replicas: 1
+ replicas: 2
  selector:
   matchLabels:
    app: nginx
