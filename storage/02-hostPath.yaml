@@ -32,4 +32,4 @@ spec:
    volumes:
     - name: var-log
       hostPath: #gives access to /var/log from the pod
-       path: /var/log
+       path: /var/log 
