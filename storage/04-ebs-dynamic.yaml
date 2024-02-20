@@ -10,7 +10,7 @@ parameters:
   iopsPerGB: "50"
   encrypted: "true"
 reclaimPolicy: Retain
-
+allowVolumeExpansion: true
 #Retain: With this policy, the volume is not deleted or modified when the associated PVC is deleted. The administrator is responsible for manually reclaiming or deleting the volume.
 #Delete: This policy specifies that the storage resource associated with the PVC should be deleted when the PVC is deleted. This typically means that the underlying storage resource will be removed from the storage backend.
 ---
